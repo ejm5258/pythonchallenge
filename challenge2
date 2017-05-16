@@ -1,0 +1,7 @@
+import collections
+
+source=open("C:\\Users\\emctague\\Documents\\python challenge\\chal2text.txt", "r+")
+RawText=source.readlines()
+print(collections.Counter(RawText).most_common(10))
+
+source.close
