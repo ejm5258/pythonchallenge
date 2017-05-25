@@ -1,0 +1,31 @@
+#not sure which of these originally worked
+
+#2.7
+from string import maketrans
+
+text=open("C:\\Users\\emctague\\Documents\\python challenge\\chal1text.txt", "r+")
+str=text.readlines()
+
+intab="abcdefghijklmnopqrstuvwxyz"
+outtab="cdefghijklmnopqrstuvwxyzab"
+trantab=maketrans(intab, outtab)
+
+print (str.translate(trantab))
+
+text.close
+
+
+#3.6
+import string
+
+text=open("C:\\Users\\emctague\\Documents\\python challenge\\chal1text.txt", "r+")
+#print(text.readline())
+
+intab="cdefghijklmnopqrstuvwxyzab"
+outtab="abcdefghijklmnopqrstuvwxyz"
+trantab=maketrans(intab, outtab)
+
+str=text
+print (str.translate(trantab))
+
+text.close
